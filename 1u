@@ -38,6 +38,8 @@ Sub Main
 	crt.Screen.Send "show memo sta his" & chr(13)
 	crt.Screen.Send chr(13)
 	crt.Screen.Send chr(13)
+	crt.Screen.Send "show diagnostic result switch all" & chr(13)
+	crt.Screen.Send chr(13)
 	crt.Screen.Send "show boot" & chr(13)
 	crt.Screen.Send "dir flash:" & chr(13)
 	crt.Screen.Send "dir /all" & chr(13)
