@@ -80,7 +80,7 @@ Sub Main
 	crt.Screen.Send chr(13)
 	crt.Screen.Send chr(13)
 	crt.Screen.Send "show run " & chr(124) & " inc vlan" & chr(13)
-	crt.Screen.Send "show run " & chr(124) & " " & chr(13)
+	crt.Screen.Send "show run " & chr(124) & " inc span" & chr(13)
 	crt.Screen.Send "show vlan brief" & chr(13)
 	crt.Screen.Send chr(13)
 	crt.Screen.Send chr(13)
