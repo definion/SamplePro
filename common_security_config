@@ -1,0 +1,44 @@
+enable
+config terminal
+
+service password-encryption
+!
+service tcp-keepalives-in
+service tcp-keepalives-out
+no service finger
+no ip finger
+no ip http server
+no ip http secure-server
+no service tcp-small-servers
+no service udp-small-servers
+no ip bootp server
+no cdp run 
+no ip directed-broadcast
+no ip source-route
+no ip identd
+no ip domain-lookup
+no service pad
+no ip mark-reply
+no ip source-route
+no vstack
+!
+vtp mode transparent
+
+======================interface
+ no ip redirects
+ no ip unreachables
+ no ip proxy-arp
+ 
+ =====================remote
+line con 0
+ exec-t 5 0
+ login local
+line aux 0
+ exec-t 0 1
+ no exec
+ transport input none
+ privilege 0
+line vty 0 4
+ exec-timeout 5 0
+ login local
+ logging sync
